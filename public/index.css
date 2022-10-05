@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+  height: 100vh;
+  background-color: #282d35;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #21222a;
+  padding: 30px 25px;
+}
+
+.nav--logo-text,
+.nav--title {
+  margin: 0;
+}
+
+.nav--logo-img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.nav--logo-text {
+  margin-right: auto;
+  width: 158px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.05em;
+
+  color: #61dafb;
+}
+
+.nav--title {
+  width: 259px;
+  height: 21px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+
+  color: #deebf8;
+}
+
+/* Main */
+main {
+  padding: 55px 30px;
+  color: #ffffff;
+background-image: url(./reactjs-icon2.png);
+background-repeat: no-repeat;
+background-position: right center;
+}
+
+.main--title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.main--facts {
+  margin-top: 45px;
+  max-width: 400px;
+}
+
+.main--facts > li{
+    font-weight: 400;
+    font-size: 16px;
+    padding-block: 10px;
+
+}
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61dafb;
+
+}
+
