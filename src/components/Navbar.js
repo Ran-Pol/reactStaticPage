@@ -1,10 +1,17 @@
-import logo from "../images/logo.svg"
-const Navbar = () => {
+import logo from '../images/react-icon-small.png'
+const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
-    <nav className="navTop">
-      <img src={logo} alt="logo" className="nav--logo-img" />
-      <h3 className="nav--logo-text">ReactFacts</h3>
-      <h4 className="nav--title">React Course - Project 1</h4>
+    <nav className={darkMode ? 'dark' : ''}>
+      <img className="nav--logo_icon" src={logo} alt="logo" />
+      <h3 className="nav--logo_text">ReactFacts</h3>
+
+      <div className="toggler">
+        <p className="toggler--light">Light</p>
+        <div className="toggler--slider" onClick={toggleDarkMode}>
+          <div className="toggler--slider--circle"></div>
+        </div>
+        <p className="toggler--dark">Dark</p>
+      </div>
     </nav>
   )
 }
